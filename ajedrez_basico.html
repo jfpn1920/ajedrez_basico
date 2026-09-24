@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajedrez basico</title>
+    <link rel="stylesheet" href="ajedrez_basico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="ajedrez_basico.js" defer></script>
+</head>
+<body>
+    <!----------------------------------->
+    <!--|estructuracion_ajedrez_basico|-->
+    <!----------------------------------->
+    <main class="contenedor_ajedrez">
+        <header class="encabezado_ajedrez">
+            <div class="icono_ajedrez">
+                <i class="fa-solid fa-chess-knight"></i>
+            </div>
+            <h1>Ajedrez Básico</h1>
+            <p>Practica movimientos básicos sobre el tablero.</p>
+        </header>
+        <!------------------------->
+        <!--|informacion_partida|-->
+        <!------------------------->
+        <section class="informacion_partida">
+            <div class="estado_partida">
+                <i class="fa-solid fa-chess-pawn"></i>
+                <span>Turno:</span>
+                <strong id="turno_actual">Blancas</strong>
+            </div>
+            <button id="reiniciar_partida" type="button"><i class="fa-solid fa-rotate-right"></i>Reiniciar</button>
+        </section>
+        <!------------------------>
+        <!--|tablero_de_ajedrez|-->
+        <!------------------------>
+        <section class="zona_tablero">
+            <div id="tablero_ajedrez" class="tablero_ajedrez"></div>
+        </section>
+        <!----------------------------->
+        <!--|instrucciones_del_juego|-->
+        <!----------------------------->
+        <section class="instrucciones">
+            <h2>¿Cómo jugar?</h2>
+            <p>Selecciona una pieza y después selecciona una casilla para moverla.</p>
+            <p>Los movimientos son básicos y están pensados para practicar JavaScript.</p>
+        </section>
+    </main>
+</body>
+</html>
